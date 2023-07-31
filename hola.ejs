@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Store</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fe0000;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        list-style: none;
+        margin-right: 10px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+    }
+    </style>
+
+    <title>Barra  inferior</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        list-style: none;
+        margin-right: 10px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+    }
+    </style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAA9lBMVEX////HJT3qNlPaKUP4+Pj7+/uuIDbxL0oAAADniJLyJEO3IzrGhYjOJ0DmLEfy8vKqCyrs7Oyvr6/MzMze3t7U1NQzMzMoKCiXl5elpaW+vr764ebkEDzpuL3rKUpBQUEbGxuIiIi+ABnFFjX37u/ZFjejABcMDAxiYmJsbGxOTk7DUlndV3C9AAO4ESv35urkADPhOVXDO0niRF/Vdn/KdnzQACXgj5nw1ti/ACK/K0XGSFrbUGXnrbXbwMP1AC+tAAbKYmvjaHt3MjvxnqeJMD2uUl3ToKTsZXQjNTLBZW0+MTIVNjIRIB3yWWyvRlK4cHmsMkRIjo0DAAAD4UlEQVRoge3We3faNhgHYBlkcCBEyJavQDAx4dYuTtdtSbeGNFu3pN16+/5fpu8rY4LBuZwzK+tO9Tv5A9uBR69uFiE6Ojo6Ojo6Ojo6OjrfWMbP0of+pfd8rITu/XDywA+ntdOeGvoo+fVeO31R66uijeTHe+z05aFC+j4bZRV076dU0nfbY5SRTn+ulh+c/nJ2/spAu11qj1+gXOufnx0dDaqlj+vHHUOmdK6t5FqtkxhJ5XS9btxpZ70taUMlbSS/bdnj17msmjaSZwV7/HwtV06ng4sCDXXTclnSF8sHd9xHZ++yXy/QmzZ9vSEjbZy82a+Obh1s0bd2UZZ0u6uUBtvER2ZRfhLaSK6g7vHvRflpaLTptvxEtPHqakde06aplDaSg205p01KaSX6XbSxI2/Q5vdHE03/v+nOI2hDDb1rl8pK6B27VFZDb9ulsiJ6yy6VVdFFu1SumG4eltZdKjca1dLN5mGJXdbbjerpZnN3ru3OsEZDCb3GOzv0JqyGbjaLdlFuNBTQl2u7/kd7wy7sYbfypDo6fXtz2mpJvu55f3bW9sa+nbPdyeSv67SyowLm/O1N/7LVAvqdZ+R2Lrfzcifvr5cUzoS0SlryZzedvz3vH6O5sjO5nbHdq/3lmMnQymmIGAKdtHCuZzTK3Unj0/5ScMY457ldOc2B/nC99/Gw1a8j3TnpNj59HjiCCyG4zMpWQk8FIb3B3sv68cHJl8/XS1fkubWrOocXaN+3RPa5N7g4R2olYn+vxllBzUD7AfFE1b/6qDAHeP6f0DrfS2xIhKvGtIPAxTssDEKc8LaDnx11dAyxLA5LzPJia0SIa1ne1LIJmcLFyFK46nwAHJBGMdQ3hzbMYk7YwqP4hPlzdbKkGdDDGVy4U5vBBkNIZLn4JLRclfTMtucepx40gbA4wGbA28yKiD93ZHuUxfMhC5bRNA74mvb8OA5U0tjhAmaUpHkcblbNZz596Pv/kibDOVksCA6xQz3s5CAW+MS1QpU0jPUIBNuaR7bvMVhPoyiIoSHxCKe8QnoBB4UhVh4Mp/EMJjQdeVPoa+gKGGjHt9XRcA5g2YCy/M3Jsw/yNmPqaOq6HFU4kQCEF7IReGXi3cpPJrcZwTGMcNcOXUFEIOCPkNBxnREjwnZdR90Ud1fblcDXBA65CSNsm/jiIELlVgbS3FzTplxJK5oqp6E6m+/QnPEQOjyMIrXHRRbQLTqMnBAqVl01BEuTYx2saFjLzFZOm3DIx9klacem1I6AprIFwqGMqVtcZhRFuH6o3DpENrg4+JwS6qwe6ujo6Ojo6Ojo6OjofGP5ClhTZsJUJZktAAAAAElFTkSuQmCC" width="100" height="100">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-item" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-item" href="#">Contacto</a>  
+            </li>
+        </ul>
+        </nav>
+    
+
+
+        <div class="card" style="width: 700px; height: 600px;">
+            <div class="card-body">
+                <h3 class="card-title">libro elegido para cargar</h3>
+                <p class="card-text">Agregue el libro </p>
+            </div>
+            <form action="/index.js" method="post">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><label for="Nombre">Nombre del libro:<input id="Nombre" type="text" name="Nombre"></label></li>
+                    <li class="list-group-item"><label for="Editorial">Editorial:<input id="Editorial" type="text" name="Editorial"></label></li>
+                    <li class="list-group-item"><label for="Año">Año publicado:<input id="Año" type="text" name="Año"></label></li>
+                    <li class="list-group-item"><label for="genero">Genero:<input id="genero" type="text" name="genero"></label></li>
+                     <li class="list-group-item"><label for="Publico_destinados">publico destinado:<input id="Publico_destinados" type="text" name="Publico_destinados"></label></li>
+                <div class="card-body">
+                    <input type="submit" value="guardar" > 
+                </div>
+            </form>
+            </div>
+            </div> 
+
+
+
+
+
+</body>
+</html>
